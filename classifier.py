@@ -39,13 +39,18 @@ def classifier(sentence, category):
             for c in category_list:
                 name = mapping[c.name()]
                 res[name] = res.get(name, 0) + wordnet.path_similarity(c, wordsets[0])
+
+    # return accumulative probability for this category
     return res
 
+# Test
 category = {
-    'sports': 2.0,
-    'food': 0.5,
+    # 'category_keyword': accumulative probability
+    'sports': 0,
+    'food': 0,
     'movie': 0,
     'technique': 0,
     'travel': 0
 }
-print(classifier('What sports do you like the best and why?', category))
+category = classifier('What sports do you like the best and why?', category)
+print(category)
