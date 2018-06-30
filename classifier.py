@@ -1,4 +1,9 @@
-#!usr/bin/env python3
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+"""A sentence classifier based on word similarity."""
+
+__copyright__ = 'Copyright 2018, Chong Guo'
 
 import nltk
 from nltk.corpus import wordnet
