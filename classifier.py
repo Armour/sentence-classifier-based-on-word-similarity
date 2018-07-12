@@ -3,10 +3,9 @@
 
 """A sentence classifier based on word similarity."""
 
-__author__ = 'Chong Guo'
+__author__ = 'Chong Guo <armourcy@gmail.com>'
 __copyright__ = 'Copyright 2018, Chong Guo'
 __license__ = 'MIT'
-__email__ = 'armourcy@email.com'
 
 import nltk
 from nltk.corpus import wordnet
